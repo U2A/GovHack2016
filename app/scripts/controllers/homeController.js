@@ -24,48 +24,59 @@ angular.module('IonicGulpSeed')
         //$scope.fetchRandomText();
 
 
+      var renderMap = function(){
+        var options = {timeout: 10000, enableHighAccuracy: true};
+
+        $cordovaGeolocation.getCurrentPosition(options).then(function(position){
+
+          var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+          var mapOptions = {
+            center: latLng,
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+
+          $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
 
-      var options = {timeout: 10000, enableHighAccuracy: true};
 
-      $cordovaGeolocation.getCurrentPosition(options).then(function(position){
+          //Wait until the map is loaded
+          google.maps.event.addListenerOnce($scope.map, 'idle', function(){
 
-        var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            var marker = new google.maps.Marker({
+              map: $scope.map,
+              animation: google.maps.Animation.DROP,
+              position: latLng
+            });
 
-        var mapOptions = {
-          center: latLng,
-          zoom: 15,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
+            var infoWindow = new google.maps.InfoWindow({
+              content: "Here I am!"
+            });
 
-        $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            google.maps.event.addListener(marker, 'click', function () {
+              infoWindow.open($scope.map, marker);
+            });
 
-
-
-        //Wait until the map is loaded
-        google.maps.event.addListenerOnce($scope.map, 'idle', function(){
-
-          var marker = new google.maps.Marker({
-            map: $scope.map,
-            animation: google.maps.Animation.DROP,
-            position: latLng
           });
 
-          var infoWindow = new google.maps.InfoWindow({
-            content: "Here I am!"
-          });
 
-          google.maps.event.addListener(marker, 'click', function () {
-            infoWindow.open($scope.map, marker);
-          });
 
+        }, function(error){
+          console.log("Could not get location");
         });
+      };
 
 
-
-      }, function(error){
-        console.log("Could not get location");
+      AttractionsService.getAttractions().then(function(data){
+        $scope.attractions = data;
+        renderMap();
       });
+
+
+
+
+
       
         
 

@@ -154,6 +154,16 @@ gulp.task('fonts', function() {
     .on('error', errorHandler);
 });
 
+// copy data
+gulp.task('data', function() {
+  return gulp
+    .src(['app/data/*.*'])
+
+    .pipe(gulp.dest(path.join(targetDir, 'data')))
+
+    .on('error', errorHandler);
+});
+
 
 // copy templates
 gulp.task('templates', function() {
@@ -387,7 +397,8 @@ gulp.task('default', function(done) {
       'templates',
       'styles',
       'images',
-      'vendor'
+      'vendor',
+      'data'
     ],
     'index',
     build ? 'noop' : 'watchers',

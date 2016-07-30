@@ -26,10 +26,10 @@
           "description_en":"Nowra /ˈnaʊərə/ is a town in the South Coast region of New South Wales, Australia. It is located 125 kilometres (78 mi) south-southwest of the state capital of Sydney (about 160 kilometres (99 mi) by road)",
           "description_cn":"some description",
           "region":"sc",
-          "weather":[
+          "weather":{
             "status":"rain",
             "temperature":"9-18"
-            ],
+            },
         },
         {
           "name":"Wyong",
@@ -38,7 +38,7 @@
             "lng":"151.418"
           },
            "distanceFrom":[
-            "Sydney":"89 km"
+            "Sydney 89 km"
           ],
           "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/destinations/20691/hero/Kooindah-Waters-Wyong.jpg",
           "imageStore":[
@@ -51,10 +51,10 @@
           "description_en":"Nestled between the mountains and the sea, the Wyong area offers lush wooded valleys and national parks, lakes, coastal towns and pristine beaches all within easy reach.",
           "description_cn":"some description",
           "region":"nc",
-          "weather":[
+          "weather":{
             "status":"sunny",
             "temperature":"8-20"
-            ],
+            },
         },
          {
           "name":"Kiama",
@@ -63,7 +63,7 @@
             "lng":"150.854167"
           },
             "distanceFrom":[
-            "Sydney":"120 km"
+            "Sydney 120 km"
           ],
           "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/visitnsw/destinations/3458/hero/Kiama-Coastline_26.jpg",
           "imageStore":[
@@ -77,10 +77,10 @@
           "description_en":"Kiama is a classic seaside town with great beaches surrounded by pastures and forests. Take in the area's stunning coastline along the Kiama Coast Walk and visit the Kiama Blowhole and Lighthouse.",
           "description_cn":"some description",
           "region":"sc",
-          "weather":[
+          "weather":{
             "status":"rain",
             "temperature":11-19"
-            ],
+            },
         },
          {
           "name":"Byron Bay",
@@ -89,7 +89,7 @@
             "lng":"153.615"
           },
           "distanceFrom":[
-            "Sydney":"772 km"
+            "Sydney 772 km"
           ],
           "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/styles/slider_homepagebreakpoints_theme_dnsw_base_desktop_1x/public/1453294-cape-bryon-bay-lighthouse.jpg?itok=D22oLIs8",
           "imageStore":[
@@ -103,10 +103,10 @@
           "description_en":"Discover Byron Bay region's enchanting and eclectic towns and villages, stunning hinterland and world-class beaches. All who visit adore the lively creative spirit, the area’s true essence. Relax and enjoy great surf, delicious food, vibrant markets and music festivals.",
           "description_cn":"some description",
           "region":"nc",
-            "weather":[
+            "weather":{
             "status":"Sunny",
             "temperature":"13-21"
-            ],
+            },
         }
       ]
     }

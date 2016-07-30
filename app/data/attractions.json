@@ -41,6 +41,25 @@
           "description_en":"Nestled between the mountains and the sea, the Wyong area offers lush wooded valleys and national parks, lakes, coastal towns and pristine beaches all within easy reach.",
           "description_cn":"some description",
           "region":"nc"
+        },
+         {
+          "name":"Kiama",
+          "gps":{
+            "lat":"-34.670833",
+            "lng":"150.854167"
+          },
+          "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/visitnsw/destinations/3458/hero/Kiama-Coastline_26.jpg",
+          "imageStore":[
+            "http://www.visitnsw.com/sites/default/files/styles/thumbnail-side-nav-gallery/public/visitnsw/galleries/kiama-blowhole.jpg",
+            "http://www.visitnsw.com/sites/default/files/styles/thumbnail-side-nav-gallery/public/visitnsw/galleries/kiama-walk.jpg?itok=jnAhkdei"""
+          ],
+          "primaryVideoUrl":,
+          "videoUrl":[
+            ""
+          ],
+          "description_en":"Kiama is a classic seaside town with great beaches surrounded by pastures and forests. Take in the area's stunning coastline along the Kiama Coast Walk and visit the Kiama Blowhole and Lighthouse.",
+          "description_cn":"some description",
+          "region":"sc"
         }
       ]
     }

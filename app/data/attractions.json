@@ -89,7 +89,7 @@
             "lng":"153.615"
           },
           "distanceFrom":[
-            "Sydney":"120 km"
+            "Sydney":"772 km"
           ],
           "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/styles/slider_homepagebreakpoints_theme_dnsw_base_desktop_1x/public/1453294-cape-bryon-bay-lighthouse.jpg?itok=D22oLIs8",
           "imageStore":[
@@ -102,7 +102,11 @@
           ],
           "description_en":"Discover Byron Bay region's enchanting and eclectic towns and villages, stunning hinterland and world-class beaches. All who visit adore the lively creative spirit, the area’s true essence. Relax and enjoy great surf, delicious food, vibrant markets and music festivals.",
           "description_cn":"some description",
-          "region":"nc"
+          "region":"nc",
+            "weather":[
+            "status":"Sunny",
+            "temperature":"13-21"
+            ],
         }
       ]
     }

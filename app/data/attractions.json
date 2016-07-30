@@ -12,7 +12,7 @@
             "lng":"150.58856"
           },
           "distanceFrom":[
-            "Sydney"
+            "Sydney":"125 km"
           ],
           "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/Bittangabee-Bay_1.jpg",
           "imageStore":[
@@ -25,7 +25,11 @@
           ],
           "description_en":"Nowra /ˈnaʊərə/ is a town in the South Coast region of New South Wales, Australia. It is located 125 kilometres (78 mi) south-southwest of the state capital of Sydney (about 160 kilometres (99 mi) by road)",
           "description_cn":"some description",
-          "region":"sc"
+          "region":"sc",
+          "weather":[
+            "status":"rain",
+            "temperature":"9-18"
+            ],
         },
         {
           "name":"Wyong",
@@ -33,6 +37,9 @@
             "lat":"-33.282",
             "lng":"151.418"
           },
+           "distanceFrom":[
+            "Sydney":"89 km"
+          ],
           "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/destinations/20691/hero/Kooindah-Waters-Wyong.jpg",
           "imageStore":[
             "http://www.visitnsw.com/sites/default/files/visitnsw/destinations/3474/hero/watagan-mountains108.jpg"
@@ -43,7 +50,11 @@
           ],
           "description_en":"Nestled between the mountains and the sea, the Wyong area offers lush wooded valleys and national parks, lakes, coastal towns and pristine beaches all within easy reach.",
           "description_cn":"some description",
-          "region":"nc"
+          "region":"nc",
+          "weather":[
+            "status":"sunny",
+            "temperature":"8-20"
+            ],
         },
          {
           "name":"Kiama",
@@ -51,6 +62,9 @@
             "lat":"-34.670833",
             "lng":"150.854167"
           },
+            "distanceFrom":[
+            "Sydney":"120 km"
+          ],
           "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/visitnsw/destinations/3458/hero/Kiama-Coastline_26.jpg",
           "imageStore":[
             "http://www.visitnsw.com/sites/default/files/styles/side_nav_image_gallerybreakpoints_theme_dnsw_base_desktop_1x/public/visitnsw/galleries/kiama-blowhole.jpg",
@@ -62,7 +76,11 @@
           ],
           "description_en":"Kiama is a classic seaside town with great beaches surrounded by pastures and forests. Take in the area's stunning coastline along the Kiama Coast Walk and visit the Kiama Blowhole and Lighthouse.",
           "description_cn":"some description",
-          "region":"sc"
+          "region":"sc",
+          "weather":[
+            "status":"rain",
+            "temperature":11-19"
+            ],
         },
          {
           "name":"Byron Bay",
@@ -70,6 +88,9 @@
             "lat":"-28.643056",
             "lng":"153.615"
           },
+          "distanceFrom":[
+            "Sydney":"120 km"
+          ],
           "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/styles/slider_homepagebreakpoints_theme_dnsw_base_desktop_1x/public/1453294-cape-bryon-bay-lighthouse.jpg?itok=D22oLIs8",
           "imageStore":[
             "http://www.visitnsw.com/sites/default/files/Hinterland_Byron_Bay.jpg",

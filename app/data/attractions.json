@@ -29,7 +29,7 @@
           "weather":{
             "status":"rain",
             "temperature":"9-18"
-            },
+            }
         },
         {
           "name":"Wyong",
@@ -54,7 +54,7 @@
           "weather":{
             "status":"sunny",
             "temperature":"8-20"
-            },
+            }
         },
          {
           "name":"Kiama",
@@ -80,7 +80,7 @@
           "weather":{
             "status":"rain",
             "temperature":11-19"
-            },
+            }
         },
          {
           "name":"Byron Bay",
@@ -106,7 +106,7 @@
             "weather":{
             "status":"Sunny",
             "temperature":"13-21"
-            },
+            }
         }
       ]
     }

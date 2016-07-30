@@ -79,7 +79,7 @@
           "region":"sc",
           "weather":{
             "status":"rain",
-            "temperature":11-19"
+            "temperature":"11-19"
             }
         },
          {
@@ -102,7 +102,11 @@
           ],
           "description_en":"Discover Byron Bay region's enchanting and eclectic towns and villages, stunning hinterland and world-class beaches. All who visit adore the lively creative spirit, the area’s true essence. Relax and enjoy great surf, delicious food, vibrant markets and music festivals.",
           "description_cn":"some description",
-          "region":"nc"
+          "region":"nc",
+          "weather":{
+            "status":"Sunny",
+            "temperature":"13-21"
+            }
         }
       ]
     }

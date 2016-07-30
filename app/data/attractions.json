@@ -51,7 +51,7 @@
           "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/visitnsw/destinations/3458/hero/Kiama-Coastline_26.jpg",
           "imageStore":[
             "http://www.visitnsw.com/sites/default/files/styles/thumbnail-side-nav-gallery/public/visitnsw/galleries/kiama-blowhole.jpg",
-            "http://www.visitnsw.com/sites/default/files/styles/thumbnail-side-nav-gallery/public/visitnsw/galleries/kiama-walk.jpg?itok=jnAhkdei"""
+            "http://www.visitnsw.com/sites/default/files/styles/thumbnail-side-nav-gallery/public/visitnsw/galleries/kiama-walk.jpg"
           ],
           "primaryVideoUrl":,
           "videoUrl":[
@@ -60,6 +60,25 @@
           "description_en":"Kiama is a classic seaside town with great beaches surrounded by pastures and forests. Take in the area's stunning coastline along the Kiama Coast Walk and visit the Kiama Blowhole and Lighthouse.",
           "description_cn":"some description",
           "region":"sc"
+        },
+         {
+          "name":"Byron Bay",
+          "gps":{
+            "lat":"-28.643056",
+            "lng":"153.615"
+          },
+          "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/styles/slider_homepagebreakpoints_theme_dnsw_base_desktop_1x/public/1453294-cape-bryon-bay-lighthouse.jpg?itok=D22oLIs8",
+          "imageStore":[
+            "http://www.visitnsw.com/sites/default/files/Hinterland_Byron_Bay.jpg",
+            "http://www.visitnsw.com/sites/default/files/styles/thumbnail-side-nav-gallery/public/visitnsw/galleries/whale-jumping-848x565_2.jpg?itok=khxJqWjC"
+          ],
+          "primaryVideoUrl":,
+          "videoUrl":[
+            ""
+          ],
+          "description_en":"Discover Byron Bay region's enchanting and eclectic towns and villages, stunning hinterland and world-class beaches. All who visit adore the lively creative spirit, the area’s true essence. Relax and enjoy great surf, delicious food, vibrant markets and music festivals.",
+          "description_cn":"some description",
+          "region":"nc"
         }
       ]
     }

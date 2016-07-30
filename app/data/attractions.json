@@ -11,6 +11,9 @@
             "lat":"-34.8808572",
             "lng":"150.58856"
           },
+          "distanceFrom":[
+            "Sydney"
+          ],
           "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/Bittangabee-Bay_1.jpg",
           "imageStore":[
             "http://www.visitnsw.com/sites/default/files/visitnsw/destinations/3444/hero/honeymoon-bay-jervis-bay.jpg",

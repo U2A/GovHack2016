@@ -11,7 +11,7 @@ angular.module('IonicGulpSeed')
   .controller('DetailsController', function($scope, $rootScope, $state) {
 
     // do something with $scope
-
+    $scope.locale = 'en';
     $scope.model = $rootScope.selectedLocation;
 
     if(!$scope.model){

@@ -4,15 +4,24 @@
         <h1 class="title">{{model.name}}</h1>
     </ion-header-bar>
 
-    <ion-content scroll="false">
+    <ion-content scroll="true">
 
-    <ion-slide-box data-ng-if="model.imageStore.length" on-slide-changed="slideHasChanged($index)">
+    <ion-slide-box data-ng-if="model.imageStore.length" on-slide-changed="slideHasChanged($index)"
+                   show-pager="true" auto-play="true" does-continue="true" slide-interval="1000">
         <ion-slide data-ng-repeat="image in model.imageStore">
             <div class="box blue">
-                <img ng-src="{{image}}" />
+                <img class="slider-image" ng-src="{{image}}" />
             </div>
         </ion-slide>
     </ion-slide-box>
+
+
+        <div class="details-description">{{model['description_'+locale]}}</div>
+
+
+
+
     </ion-content>
+
 
 </ion-view>

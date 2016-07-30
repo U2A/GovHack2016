@@ -7,7 +7,7 @@
  * # HomeController
  */
 angular.module('IonicGulpSeed')
-    .controller('HomeController', function($scope, $cordovaGeolocation, AttractionsService) {
+    .controller('HomeController', function($scope, $cordovaGeolocation, AttractionsService, $state, $rootScope) {
 
 
         /*
@@ -24,9 +24,9 @@ angular.module('IonicGulpSeed')
         //$scope.fetchRandomText();
 
 
-      function CustomMarker(latlng, map, imageSrc) {
-        this.latlng_ = latlng;
-        this.imageSrc = imageSrc;
+      function CustomMarker(map, model) {
+        this.latlng_ = new google.maps.LatLng(model.gps.lat,model.gps.lng);
+        this.model = model;
         // Once the LatLng and text are set, add the overlay to the map.  This will
         // trigger a call to panes_changed which should in turn call draw.
         this.setMap(map);
@@ -43,12 +43,14 @@ angular.module('IonicGulpSeed')
           // Create the DIV representing our CustomMarker
           div.className = "customMarker"
 
-
+          var model = this.model;
           var img = document.createElement("img");
-          img.src = this.imageSrc;
+          img.src = this.model.primaryImageUrl;
           div.appendChild(img);
           google.maps.event.addDomListener(div, "click", function (event) {
-            google.maps.event.trigger(me, "click");
+            //google.maps.event.trigger(me, "click");
+            $rootScope.selectedLocation = model;
+            $state.go('app.details');
           });
 
           // Then add the overlay to the DOM
@@ -127,7 +129,7 @@ angular.module('IonicGulpSeed')
 
                   for(var i=0;i<$scope.selectedState.locations.length;i++){
                     var location = $scope.selectedState.locations[i];
-                    new CustomMarker(new google.maps.LatLng(location.gps.lat,location.gps.lng), $scope.map,  location.primaryImageUrl)
+                    new CustomMarker($scope.map,  location);
                   }
 
 

@@ -36,13 +36,23 @@ angular.module('IonicGulpSeed', ['ionic', 'ngCordova', 'ngResource', 'ngSanitize
             })
             .state('app.home', {
                 url: '/home',
-                cache: true,
+                cache: false,
                 views: {
                     'viewContent': {
                         templateUrl: 'templates/views/home.html',
                         controller: 'HomeController'
                     }
                 }
+            })
+            .state('app.details', {
+              url: '/details',
+              cache: false,
+              views: {
+                'viewContent': {
+                  templateUrl: 'templates/views/details.html',
+                  controller: 'DetailsController'
+                }
+              }
             })
             .state('app.settings', {
                 url: '/settings',

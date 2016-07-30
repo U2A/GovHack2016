@@ -1,0 +1,28 @@
+{
+  "attractions":[
+    {
+      "state":"NSW",
+      "name":"New south whales",
+      "locations":[
+        {
+          "name":"Nowra",
+          "gps":{
+            "lat":"323",
+            "ltd":"333"
+          },
+          "primaryImageUrl":"some image",
+          "imageStore":[
+            "url of other images"
+          ],
+          "primaryVideoUrl":"some video",
+          "videoUrl":[
+            "videoUrl"
+          ],
+          "description_en":"some description",
+          "description_cn":"some description",
+          "region":"sc"
+        }
+      ]
+    }
+  ]
+}

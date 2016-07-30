@@ -16,7 +16,20 @@
     </ion-slide-box>
 
 
-        <div class="details-description">{{model['description_'+locale]}}</div>
+    <div class="details-description">{{model['description_'+locale]}}</div>
+
+    <div class="distance-weather-container">
+        <div class="distance-container">
+            <span data-ng-repeat="distance in model.distanceFrom">{{distance}}</span>
+        </div>
+
+        <div class="weather-container" data-ng-if="model.weather">
+            <span>Weather</span>
+            <span>{{model.weather.status}}</span>
+            <span>{{model.weather.temperature}} &#x2103;</span>
+        </div>
+
+    </div>
 
 
 

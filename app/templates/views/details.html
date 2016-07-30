@@ -4,8 +4,15 @@
         <h1 class="title">{{model.name}}</h1>
     </ion-header-bar>
 
-    <ion-content>
-        
+    <ion-content scroll="false">
+
+    <ion-slide-box data-ng-if="model.imageStore.length" on-slide-changed="slideHasChanged($index)">
+        <ion-slide data-ng-repeat="image in model.imageStore">
+            <div class="box blue">
+                <img ng-src="{{image}}" />
+            </div>
+        </ion-slide>
+    </ion-slide-box>
     </ion-content>
 
 </ion-view>

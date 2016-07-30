@@ -29,11 +29,18 @@ angular.module('IonicGulpSeed')
 
         $cordovaGeolocation.getCurrentPosition(options).then(function(position){
 
+          var geocoder = new google.maps.Geocoder();
+
+
+
+
+
+
           var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+          //center: latLng,
 
           var mapOptions = {
-            center: latLng,
-            zoom: 15,
+            zoom: 20,
             mapTypeId: google.maps.MapTypeId.ROADMAP
           };
 
@@ -44,6 +51,8 @@ angular.module('IonicGulpSeed')
           //Wait until the map is loaded
           google.maps.event.addListenerOnce($scope.map, 'idle', function(){
 
+
+            /*
             var marker = new google.maps.Marker({
               map: $scope.map,
               animation: google.maps.Animation.DROP,
@@ -56,6 +65,22 @@ angular.module('IonicGulpSeed')
 
             google.maps.event.addListener(marker, 'click', function () {
               infoWindow.open($scope.map, marker);
+            });
+            */
+
+            geocoder.geocode( { 'address': $scope.selectedState.state}, function(results, status) {
+              if (status == google.maps.GeocoderStatus.OK) {
+                if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
+                  if (results && results[0]
+                    && results[0].geometry && results[0].geometry.viewport)
+                    $scope.map.fitBounds(results[0].geometry.viewport);
+                    $scope.map.setZoom($scope.selectedState.mapZoom);
+                } else {
+                  alert("No results found");
+                }
+              } else {
+                alert("Geocode was not successful for the following reason: " + status);
+              }
             });
 
           });
@@ -70,6 +95,7 @@ angular.module('IonicGulpSeed')
 
       AttractionsService.getAttractions().then(function(data){
         $scope.attractions = data;
+        $scope.selectedState = data[0];
         renderMap();
       });
 

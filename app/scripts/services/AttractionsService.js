@@ -21,7 +21,7 @@ angular.module('IonicGulpSeed')
         method: 'GET'
       })
         .success(function(data) {
-          deferred.resolve(data);
+          deferred.resolve(data.attractions);
         })
         .error(function(error) {
           

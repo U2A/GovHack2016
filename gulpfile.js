@@ -320,6 +320,7 @@ gulp.task('watchers', function() {
   plugins.livereload.listen();
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/fonts/**', ['fonts']);
+  gulp.watch('app/data/**', ['data']);
   gulp.watch('app/icons/**', ['iconfont']);
   gulp.watch('app/images/**', ['images']);
   gulp.watch('app/scripts/**/*.js', ['index']);

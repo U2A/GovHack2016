@@ -1,8 +1,9 @@
 {
   "attractions":[
     {
-      "state":"NSW",
+      "state":"NSW,Australia",
       "name":"New south whales",
+      "mapZoom":6,
       "locations":[
         {
           "name":"Nowra",

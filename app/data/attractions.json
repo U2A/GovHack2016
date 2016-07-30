@@ -23,6 +23,24 @@
           "description_en":"Nowra /ˈnaʊərə/ is a town in the South Coast region of New South Wales, Australia. It is located 125 kilometres (78 mi) south-southwest of the state capital of Sydney (about 160 kilometres (99 mi) by road)",
           "description_cn":"some description",
           "region":"sc"
+        },
+        {
+          "name":"Wyong",
+          "gps":{
+            "lat":"-33.282",
+            "lng":"151.418"
+          },
+          "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/destinations/20691/hero/Kooindah-Waters-Wyong.jpg",
+          "imageStore":[
+            "http://www.visitnsw.com/sites/default/files/visitnsw/destinations/3474/hero/watagan-mountains108.jpg"
+          ],
+          "primaryVideoUrl":"https://www.youtube.com/watch?time_continue=5&v=RT5A3Xlgt-4",
+          "videoUrl":[
+            ""
+          ],
+          "description_en":"Nestled between the mountains and the sea, the Wyong area offers lush wooded valleys and national parks, lakes, coastal towns and pristine beaches all within easy reach.",
+          "description_cn":"some description",
+          "region":"nc"
         }
       ]
     }

@@ -7,7 +7,7 @@
  * # HomeController
  */
 angular.module('IonicGulpSeed')
-    .controller('HomeController', function($scope, $cordovaGeolocation) {
+    .controller('HomeController', function($scope, $cordovaGeolocation, AttractionsService) {
 
 
         /*

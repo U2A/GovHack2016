@@ -1,3 +1,7 @@
+body {
+  font-size:12pt;
+}
+
 .slider {
   height: 30%;
 }
@@ -32,4 +36,38 @@
 .weather-container{
   float: left;
   width: 50%;
+}
+
+.news-section{
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.language-section{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.distance-weather-container{
+  font-weight: bold;
+  font-size:12pt;
+  color:lightsalmon;
+}
+
+.news-section h3{
+  color:darkblue;
+  padding-top:20px;
+}
+
+.news-section h2 a{
+  font-size: 14pt;
+  color:lightseagreen;
+}
+
+.news-section p{
+  font-size: 12pt;
+}
+
+.transport-section a{
+  margin: 10px;
 }

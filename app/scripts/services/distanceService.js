@@ -21,12 +21,15 @@ angular.module('IonicGulpSeed')
       var service = new google.maps.DistanceMatrixService();
       service.getDistanceMatrix(
         {
-          origins: [origin],
-          destinations: [destination],
-          travelMode: 'DRIVING',
-          transitOptions: TransitOptions,
-          drivingOptions: DrivingOptions,
-          unitSystem: UnitSystem,
+          origins: ['central, sydney'],
+          destinations: ['nowra, NSW'],
+          travelMode: 'TRANSIT',
+          transitOptions: {
+            departureTime: new Date(),
+            modes: ['TRAIN'],
+            routingPreference: 'FEWER_TRANSFERS'
+          },
+          unitSystem: google.maps.UnitSystem.IMPERIAL,
           avoidHighways: false,
           avoidTolls: false,
         }, function(response, status){

@@ -7,6 +7,7 @@
       "locations":[
         {
           "name":"Nowra",
+          "website":"http://www.visitnsw.com/destinations/south-coast/jervis-bay-and-shoalhaven/nowra",
           "gps":{
             "lat":"-34.8808572",
             "lng":"150.58856"
@@ -33,12 +34,27 @@
         },
         {
           "name":"Wyong",
+          "website":"http://www.centralcoastaustralia.com.au/",
           "gps":{
             "lat":"-33.282",
             "lng":"151.418"
           },
            "distanceFrom":[
             "Sydney 89 km"
+          ],
+          "transit":[
+            {
+              "origin":{
+                "station":"Central",
+                "platform":"18",
+                "time": "5:30 PM"
+              },
+              "destination":{
+                "station":"Central",
+                "platform":"18",
+                "time": "5:30 PM"
+              }
+            }
           ],
           "primaryImageUrl":"http://www.visitnsw.com/sites/default/files/destinations/20691/hero/Kooindah-Waters-Wyong.jpg",
           "imageStore":[
@@ -58,6 +74,7 @@
         },
          {
           "name":"Kiama",
+           "website":"http://www.visitnsw.com/destinations/south-coast/kiama-area",
           "gps":{
             "lat":"-34.670833",
             "lng":"150.854167"
@@ -84,6 +101,7 @@
         },
          {
           "name":"Byron Bay",
+           "website":"http://www.visitnsw.com/destinations/north-coast/byron-bay-area",
           "gps":{
             "lat":"-28.643056",
             "lng":"153.615"

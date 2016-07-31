@@ -20,11 +20,48 @@
                     <i class="icon ion-home"></i>
                     Home
                 </a>
+
                 <a menu-close class="item item-icon-left" ui-sref-active="active" ui-sref="app.settings">
                     <i class="icon ion-settings"></i>
-                    Settings
+                    About
                 </a>
             </div>
         </ion-content>
     </ion-side-menu>
+
+
+    <ion-side-menu side="right" class="side-menu">
+
+        <ion-header-bar align-title="center" class="bar-positive">
+            <h1 class="title">States</h1>
+        </ion-header-bar>
+        <ion-content class="has-header">
+            <div class="list">
+                <a menu-close class="item" ui-sref-active="active" ui-sref="app.home">
+                    NSW
+                </a>
+                <a menu-close class="item"  ui-sref="app.home">
+                    VIC
+                </a>
+                <a menu-close class="item"  ui-sref="app.home">
+                    QLD
+                </a>
+                <a menu-close class="item"  ui-sref="app.home">
+                    WA
+                </a>
+                <a menu-close class="item"  ui-sref="app.home">
+                    NT
+                </a>
+                <a menu-close class="item"  ui-sref="app.home">
+                    SA
+                </a>
+                <a menu-close class="item" ui-sref="app.home">
+                    TAS
+                </a>
+            </div>
+        </ion-content>
+    </ion-side-menu>
+
+
+
 </ion-side-menus>

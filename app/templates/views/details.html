@@ -6,6 +6,9 @@
 
     <ion-content scroll="true">
 
+
+
+
     <ion-slide-box data-ng-if="model.imageStore.length" on-slide-changed="slideHasChanged($index)"
                    show-pager="true" auto-play="true" does-continue="true" slide-interval="1000">
         <ion-slide data-ng-repeat="image in model.imageStore">
@@ -14,6 +17,10 @@
             </div>
         </ion-slide>
     </ion-slide-box>
+
+        <div class="language-section">
+            <a href="#" data-ng-click="setLanguage('en')">English</a> | <a href="#" data-ng-click="setLanguage('cn')">中文</a>
+        </div>
 
 
     <div class="details-description">{{model['description_'+locale]}}</div>
@@ -34,16 +41,28 @@
 
 
     <div class="news-section">
-        <h2>Local ABC story</h2>
+        <h3>Local ABC story</h3>
 
         <ion-list>
-            <ion-item data-ng-repeat="news in newsModel | limitTo:3" data-ng-class="{'item-thumbnail-left' : news.doc.article.image !=  null}">
-                <img data-ng-if="news.doc.article.image" ng-src="{{news.doc.article.image.url}}">
+            <ion-item data-ng-repeat="news in newsModel | limitTo:5 " data-ng-if="news.doc.article.image.url" class="item-text-wrap" data-ng-class="{'item-thumbnail-left' : news.doc.article.image.url !=  null}">
+                <img data-ng-if="news.doc.article.image.url" ng-src="{{news.doc.article.image.url}}">
                 <h2><a target="_blank" ng-href="{{news.doc.article.link}}">{{news.doc.article.title}}</a></h2>
                 <p>{{news.doc.article.description}}</p>
             </ion-item>
         </ion-list>
 
+    </div>
+
+
+    <div class="transport-section">
+
+        <a href="https://www.google.com.au/maps/dir/Central/{{model.name}}/" target="_blank" class="button button-positive ion-android-bus">
+            How to get there?
+        </a>
+
+        <a href="{{model.website}}" target="_blank" class="button button-royal ion-android-cloud-done">
+            For more details
+        </a>
 
 
 

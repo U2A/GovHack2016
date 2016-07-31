@@ -36,7 +36,7 @@ angular.module('IonicGulpSeed', ['ionic', 'ngCordova', 'ngResource', 'ngSanitize
             })
             .state('app.home', {
                 url: '/home',
-                cache: false,
+                cache: true,
                 views: {
                     'viewContent': {
                         templateUrl: 'templates/views/home.html',

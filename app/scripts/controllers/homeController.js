@@ -47,6 +47,13 @@ angular.module('IonicGulpSeed')
           var img = document.createElement("img");
           img.src = this.model.primaryImageUrl;
           div.appendChild(img);
+
+          /*
+          var label = document.createElement("div");
+          label.innerHTML = model.name;
+          div.appendChild(label);
+          */
+
           google.maps.event.addDomListener(div, "click", function (event) {
             //google.maps.event.trigger(me, "click");
             $rootScope.selectedLocation = model;

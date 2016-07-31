@@ -20,7 +20,7 @@
 
     <div class="distance-weather-container">
         <div class="distance-container">
-            <span data-ng-repeat="distance in model.distanceFrom">{{distance}}</span>
+            <span data-ng-repeat="distance in model.distanceFrom">From {{distance}}</span>
         </div>
 
         <div class="weather-container" data-ng-if="model.weather">
@@ -28,6 +28,24 @@
             <span>{{model.weather.status}}</span>
             <span>{{model.weather.temperature}} &#x2103;</span>
         </div>
+
+    </div>
+
+
+
+    <div class="news-section">
+        <h2>Local ABC story</h2>
+
+        <ion-list>
+            <ion-item data-ng-repeat="news in newsModel | limitTo:3" data-ng-class="{'item-thumbnail-left' : news.doc.article.image !=  null}">
+                <img data-ng-if="news.doc.article.image" ng-src="{{news.doc.article.image.url}}">
+                <h2><a target="_blank" ng-href="{{news.doc.article.link}}">{{news.doc.article.title}}</a></h2>
+                <p>{{news.doc.article.description}}</p>
+            </ion-item>
+        </ion-list>
+
+
+
 
     </div>
 

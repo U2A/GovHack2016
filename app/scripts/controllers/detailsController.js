@@ -8,7 +8,7 @@
  * This controller handles the side menu
  */
 angular.module('IonicGulpSeed')
-  .controller('DetailsController', function($scope, $rootScope, $state) {
+  .controller('DetailsController', function($scope, $rootScope, $state, NewsService) {
 
     // do something with $scope
     $scope.locale = 'en';
@@ -17,11 +17,18 @@ angular.module('IonicGulpSeed')
     if(!$scope.model){
       $state.go('app.home');
     }
+    else {
+      NewsService.getNewsByRegion('').then(function(data){
+        $scope.newsModel = data;
+      });
 
-    $scope.options = {
-      loop: false,
-      effect: 'fade',
-      speed: 500,
-    };
+      $scope.options = {
+        loop: false,
+        effect: 'fade',
+        speed: 500,
+      };
+    }
+
+
 
   });
